@@ -136,6 +136,9 @@ body{
     border-radius:15px;
     transition:.3s;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    max-width:300px;
+    margin:auto;
 }
 
 .project-card:hover{
@@ -158,7 +161,15 @@ body{
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
+.modal-body{
+    max-height:400px;
+    overflow-y:auto;
+}
 
+
+.btn-sm{
+    padding:4px 12px;
+}
 .form-control{
     border-radius:10px;
 }
@@ -181,7 +192,7 @@ footer a{
 footer a:hover{
     color:#ffd700;
 }
-```
+
 
 
 </style>
@@ -343,77 +354,352 @@ Projects
 
 <div class="row g-4">
 
-<div class="col-md-4">
+<div class="card project-card">
+    <div class="card-body">
+
+        <h5>Student Management System</h5>
+
+        <p>
+            Manage students, attendance, courses and results.
+        </p>
+
+        <button class="btn btn-custom"
+                data-bs-toggle="modal"
+                data-bs-target="#smsModal">
+            View Details
+        </button>
+
+    </div>
+</div>
+<div class="modal fade" id="smsModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Student Management System
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Project Description</h6>
+
+                <p>
+                    A complete Student Management System developed
+                    using HTML, CSS, Bootstrap, PHP and MySQL.
+                </p>
+
+                <h6>Features</h6>
+
+                <ul>
+                    <li>Student Enrollment</li>
+                    <li>Course Management</li>
+                    <li>Attendance Tracking</li>
+                    <li>Exam Results</li>
+                    <li>Profile Management</li>
+                </ul>
+<a href="https://keerthana.byethost3.com/sms1/"
+   target="_blank"
+   class="btn btn-custom">
+   View Project
+</a>
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Online Voting System -->
+
+<div class="col-lg-3 col-md-4">
 
 <div class="card project-card">
 
-<div class="card-body">
+    <div class="card-body">
 
-<h5>Student Management System</h5>
+        <h5>Online Voting System</h5>
 
-<p>
-Manage students, attendance, courses and results.
-</p>
+        <p>
+            Secure online election and voting management system.
+        </p>
 
- <a href="https://keerthana.byethost3.com/sms1/"
-       class="btn btn-custom"
-       target="_blank">
-       View Project
+        <button class="btn btn-custom"
+                data-bs-toggle="modal"
+                data-bs-target="#votingModal">
+            View Details
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- Voting Modal -->
+
+<div class="modal fade" id="votingModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    Online Voting System
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <h6>Project Description</h6>
+
+                <p>
+                    A secure Online Voting System developed using
+                    HTML, CSS, Bootstrap, PHP and MySQL.
+                </p>
+
+                <h6>Features</h6>
+
+                <ul>
+                    <li>Admin Dashboard</li>
+                    <li>Election Management</li>
+                    <li>Candidate Registration</li>
+                    <li>Student Voting</li>
+                    <li>Vote Counting</li>
+                    <li>Election Results</li>
+                </ul>
+<a href="https://keerthana.byethost3.com/ovf/"
+   target="_blank"
+   class="btn btn-custom">
+   View Project
+</a>
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="col-md-4">
+
+    <div class="card project-card">
+
+        <div class="card-body">
+
+            <h5>More Projects</h5>
+
+            <p>
+                Explore all my web development projects and applications.
+            </p>
+
+            <button class="btn btn-custom"
+                    data-bs-toggle="modal"
+                    data-bs-target="#moreProjectsModal">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+<!-- More Projects Modal -->
+
+<div class="modal fade" id="moreProjectsModal" tabindex="-1">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title">
+                    My Projects
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+<ul class="list-group">
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Student Management System
+    <a href="https://keerthana.byethost3.com/sms1/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
     </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Online Voting System
+    <a href="https://keerthana.byethost3.com/ovf/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Student Marks Management System
+    <a href="https://keerthana.byethost3.com/student_marks/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Student Marks Add & Edit System
+    <a href="https://keerthana.byethost3.com/student_mark2/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Personal Portfolio Website
+    <a href="https://keerthana.byethost3.com/projects/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    To-Do Application
+    <a href="https://keerthana.byethost3.com/project2/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Calculator
+    <a href="https://keerthana.byethost3.com/project3/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Digital Clock
+    <a href="https://keerthana.byethost3.com/project4/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Stopwatch
+    <a href="https://keerthana.byethost3.com/project5/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    BMI Calculator
+    <a href="https://keerthana.byethost3.com/project6/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Student Score Calculation System
+    <a href="https://keerthana.byethost3.com/project7/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Student Group Generator
+    <a href="https://keerthana.byethost3.com/project8/"
+       target="_blank"
+       class="btn btn-sm btn-custom">
+       View project
+    </a>
+</li>
+
+</ul>
+
+            </div>
+
+            <div class="modal-footer">
+
+                <button class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
-</div>
+</section>
 
-</div>
 
-<div class="col-md-4">
 
-<div class="card project-card">
+</section>
+```
 
-<div class="card-body">
-
-<h5>Online Voting System</h5>
-
-<p>
-Secure online election and voting management system.
-</p>
-
-<a href="https://keerthana.byethost3.com/ovf/" class="btn btn-custom">
-View Project
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card project-card">
-
-<div class="card-body">
-
-<h5>To-Do Application</h5>
-
-<p>
-Task management application with storage support.
-</p>
-
-<a href="#" class="btn btn-custom">
-View Project
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 </section>
 
